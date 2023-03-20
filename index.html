@@ -1,60 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- Mulish font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Student</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <div class="wrapper">
-      <div class="_container">
-        <div class="ellipse"></div>
-        <div class="form">
-          <div class="form__content form-content">
-            <h3 class="form__title">Form Pendaftaran</h3>
-            <form action="biodata.html" class="form__form-box form-box" enctype="multipart/form-data">
-              <div class="form-box__input-box input-box">
-                <label for="">Nama Lengkap</label>
-                <input type="text" placeholder="Masukkan nama lengkap" />
-              </div>
-              <div class="form-box__input-box input-box">
-                <label for="">Pekerjaan</label>
-                <input type="text" placeholder="Masukkan pekerjaan" />
-              </div>
-              <div class="form-box__input-box input-box">
-                <label for="">Hobi</label>
-                <select name="" id="">
-                  <option value="">Ngoding</option>
-                  <option value="">Makan</option>
-                  <option value="">Membaca</option>
-                  <option value="">Mendengar</option>
-                  <option value="">Menonton</option>
-                </select>
-              </div>
-              <div class="form-box__input-box input-box">
-                <label for="">Nationality</label>
-                <input type="text" placeholder="Masukkan Nationality" />
-              </div>
-              <div class="form-box__input-box input-box">
-                <label for="">Biodata</label>
-                <input type="text" placeholder="Masukkan Biodata" />
-              </div>
-              <div class="form-box__input-box input-box">
-                <label for="">foto</label>
-                <input type="file" />
-              </div>
-              <div class="form-box__btn-box btn-box">
-                <button type="submit">Submit</button>
-              </div>
-            </form>
-          </div>
+    <div class="app">
+      <div class="container">
+        <div class="list">
+          <header class="list-header">
+            <button class="btn" id="add-student">add Form Biodata</button>
+          </header>
+          <main class="list-body"></main>
         </div>
       </div>
     </div>
+
+    <div class="modal">
+      <div class="modal-dialog">
+        <a class="modal-close" modal-close href="javascript:void(0)">X</a>
+        <form action="#" id="form-student">
+          <div class="modal-header">
+            <p class="modal-title">Add Form Biodata</p>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label class="form-label" for="">name</label>
+              <input type="text" name="name" class="form-input" />
+            </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-outline-primary">save</button>
+            <button type="reset" modal-close class="btn btn-outline-danger">cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
   </body>
 </html>
